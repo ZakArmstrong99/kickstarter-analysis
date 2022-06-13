@@ -7,7 +7,7 @@
 To summarize the reasoning of this project, Louise wanted to get a better idea of the relationship 
 between different theater/play Kickstarter campaign launch dates and the campaign outcomes based on their goals.
 The data used in the analysis consists of many different Kickstarter campaigns, 
-including campaigns under the theater catergory. Using this anaylsis, Louis will better understand the performance
+including campaigns under the theater category. Using this analysis, Louis will better understand the performance
 of her own play's Kickstarter campaign.
 
 ## Analysis and Challenges
@@ -16,7 +16,7 @@ of her own play's Kickstarter campaign.
 
 My analysis began by creating a pivot table with the total amount of successful, failed, and canceled outcomes 
 of kickstarter campaigns in relation to the dates they were launched. Using pivot table filters, I was able to 
-filter this data by the parent catergory of theater. The filtered data was then used to make a pivot chart titled 
+filter this data by the parent category of theater. The filtered data was then used to make a pivot chart titled 
 Theater Outcomes Based on Launch Date.
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/107213807/173424554-882981d9-d1d0-4959-bcbe-871fa6cbb31e.png)
 
@@ -25,21 +25,21 @@ Theater Outcomes Based on Launch Date.
 Next, I wanted to see how theater Kickstarter campaigns goals influenced their outcomes. This was done by making a new
 table with including campaign goals, outcomes, and total projects in order to find the percentages of successful, failed,
 and canceled projects. Finding the outcomes of play projects in relation to their set goals was possible with the
-COUNTIFS() function. By spliting the goals up into intervals starting with  greater than 1000, then by $5000 up to $50000,
-the countifs function was able to find the amount of the outcomes for these intervals while filtering by subcatergory "plays".
+COUNTIFS() function. By splitting the goals up into intervals starting with  greater than 1000, then by $5000 up to $50000,
+the countifs function was able to find the amount of the outcomes for these intervals while filtering by subcategory "plays".
 I also used the SUM() function in order to find the total projects, along with the IFERROR() function and ROUND() function for
 the percentages. This data was then used to create the chart Outcomes Based on Goal.
 ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/107213807/173424578-5c1ec636-db8f-4eb6-8935-2a1403fb5fd9.png)
 
 ### Challenges and Difficulties Encountered
 
-The first challenge I encountered was that the data in launched_at and deadline columns were Unix tiemestamps and 
+The first challenge I encountered was that the data in launched_at and deadline columns were Unix timestamps and 
 needed to be converted in order to get the month, day, and year for the Theater Outcomes Based on launch date to be possible. 
 This was resolved by creating two new columns titled Date Created Conversion and Date Ended Conversion which included the
 formula =(((J2/60)/60)/24)+DATE(1970,1,1). This formula converts Unix timestamps to readable timestamps making it possible
 to create the Theater Outcomes by Launch Date chart. Other than that, there weren't any other challenges. A possible challenge
 could be if one of the total projects on the Outcomes Based on Goals table were 0. This would lead to an error as there were 
-no play Kickstarter campaigns canceled. This could be fixed with the with the IFERROR() function as it could turn all errors into 0s. 
+no play Kickstarter campaigns canceled. This could be fixed with the IFERROR() function as it could turn all errors into 0s. 
 
 ## Results
 
@@ -55,11 +55,11 @@ chance of a successful outcome.
 - What can you conclude about the Outcomes based on Goals?
 
 When looking at the Outcomes Based on Goals chart, it appears percentage of successful campaigns and percentage of failed campaigns
-follow the opposite trend. While percentage of successful campaigns are high, percentage of failed campaigns are low and vice versa.  
+follow the opposite trend. While the percentage of successful campaigns are high, the percentage of failed campaigns are low and vice versa.  
 What is interesting is that the percentages of both outcomes meet at three spots on the chart, which could conclude that some goals
-have equal chance of succeeding or failing. We also can conclude that the lower the goal of a play Kickstarter campaign, 
+have an equal chance of succeeding or failing. We also can conclude that the lower the goal of a play Kickstarter campaign, 
 the more likely it is to succeed with the exception of goals in the range of 35000 to 39999 and 40000 to 44999. 
-It is worth mentioning these excpetions as there are only 9 total projects in the range of 35000 to 44999, 
+It is worth mentioning these exceptions as there are only 9 total projects in the range of 35000 to 44999, 
 compared to the 1021 total projects under the goal of 34999. 
 
 - What are some limitations of this dataset?
@@ -73,5 +73,6 @@ could be drawn for the relationships of outcomes with launch date and goals.
 
 A possible table and graph that could be made could include whether a campaign was a Kickstarter staff pick or not relative to the outcome.
 This would give insight as to how much influence the staff pick has. We also could make a table that shows the difference between how much 
-theater campaigns pledged and it's goal relative to the outcome. This could give insight as how many Kickstarter supporters are backing plays 
+theater campaigns pledged and its goal relative to the outcome. This could give insight as how many Kickstarter supporters are backing plays 
 they want to exist.
+

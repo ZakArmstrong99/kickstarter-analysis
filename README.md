@@ -18,6 +18,7 @@ My analysis began by creating a pivot table with the total amount of successful,
 of kickstarter campaigns in relation to the dates they were launched. Using pivot table filters, I was able to 
 filter this data by the parent catergory of theater. The filtered data was then used to make a pivot chart titled 
 Theater Outcomes Based on Launch Date.
+![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/107213807/173424554-882981d9-d1d0-4959-bcbe-871fa6cbb31e.png)
 
 ### Analysis of Outcomes Based on Goals
 
@@ -28,6 +29,7 @@ COUNTIFS() function. By spliting the goals up into intervals starting with  grea
 the countifs function was able to find the amount of the outcomes for these intervals while filtering by subcatergory "plays".
 I also used the SUM() function in order to find the total projects, along with the IFERROR() function and ROUND() function for
 the percentages. This data was then used to create the chart Outcomes Based on Goal.
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/107213807/173424578-5c1ec636-db8f-4eb6-8935-2a1403fb5fd9.png)
 
 ### Challenges and Difficulties Encountered
 

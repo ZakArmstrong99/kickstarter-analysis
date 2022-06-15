@@ -18,7 +18,8 @@ My analysis began by creating a pivot table with the total amount of successful,
 of kickstarter campaigns in relation to the dates they were launched. Using pivot table filters, I was able to 
 filter this data by the parent category of theater. The filtered data was then used to make a pivot chart titled 
 Theater Outcomes Based on Launch Date.
-![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/107213807/173424554-882981d9-d1d0-4959-bcbe-871fa6cbb31e.png)
+![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/107213807/173899896-2c3182a2-8fb9-4f4f-9a9e-d2e66f3e14c7.png)
+
 
 ### Analysis of Outcomes Based on Goals
 
